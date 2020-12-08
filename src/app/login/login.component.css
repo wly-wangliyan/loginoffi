@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url(../../assets/img/login-bg.jpg);
+    background-size: 100% 100%;
+}
+.login {
+    width: 430px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: #fff;
+}
+.login-logo {
+    width: 430px;
+    margin-bottom: 45px;
+}
+.login-logo img {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 45px;
+}
+.form-group {
+    width: 330px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.form-group input {
+    height: 48px;
+    padding-left: 50px;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.username{
+    background: url(../../assets/img/login-unfocus.png) no-repeat 15px center;
+}
+.password{
+    background: url(../../assets/img/psd-unfocus.png) no-repeat 15px center;
+}
+.btn {
+    width: 330px;
+    margin: 0 auto;
+}
+button {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.router {
+    width: 330px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.router .right {
+    float: right;
+}

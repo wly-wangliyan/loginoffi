@@ -1,0 +1,20 @@
+<div class="body">
+  <div class="main-bg">
+    <div class="title">行业<span>资讯</span></div>
+    <div class="industry">INDUSTRY</div>
+  </div>
+  <div class="content">
+    <div class="content-info" *ngFor="let item of industryArray" (click)="onClickAlert()">
+      <span></span>
+      <div class="content-title">{{item.title}}</div>
+      <div class="delivery-time">{{item.deliveryTime}}</div>
+      <div class="content-text">
+        {{item.text}}
+      </div>
+      <div class="line"></div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+

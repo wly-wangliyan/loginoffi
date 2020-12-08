@@ -1,0 +1,35 @@
+<div class="body">
+  <div class="header">
+    <div>
+      <img src="../../assets/img/logo_w.png">
+      <button>返回首页</button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="login-content">
+      <img src="../../assets/img/login-bg.png">
+      <div>
+        <div class="choose">
+          <div class="login" [ngClass]="{'onActive':isActive}">登录</div>
+          <span></span>
+          <div class="register" [ngClass]="{'onActive':!isActive}">注册</div>
+        </div>
+        <form #userForm="ngForm">
+          <div class="user-group">
+            <input type="text" placeholder="请输入用户名" [(ngModel)]="username"
+                   name="username" id="username" maxlength="20" tabindex="1" autocomplete="new-password"
+                   required>
+            <div class="icon user-icon"></div>
+          </div>
+          <div class="pwd-group">
+            <input class="form-control" type="password" tabindex="2" placeholder="请输入密码"
+                   [(ngModel)]="password" name="password" id="password" autocomplete="new-password" required>
+            <div class="icon pwd-icon"></div>
+          </div>
+          <button type="button" [disabled]="!userForm.form.valid">登录</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

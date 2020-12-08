@@ -1,0 +1,164 @@
+.body {
+  width: 100%;
+  height: 1080px;
+  background: #F7F7F7;
+  min-width: 1200px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+}
+
+.header > div {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/*.header img {*/
+/*  margin-left: 360px;*/
+/*}*/
+
+.header button {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #E11D25;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #E11D25;
+  outline: none;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header button:hover {
+  background: rgba(0, 0, 0, .05);
+}
+
+.header button:active {
+  background: rgba(0, 0, 0, .1);
+}
+
+
+.login-content {
+  overflow: hidden;
+  width: 1080px;
+  height: 690px;
+  background: #FFFFFF;
+  box-shadow: 0px 11px 46px 0px rgba(73, 73, 73, 0.4);
+  border-radius: 15px;
+  margin: 115px 0px 0px 420px;
+  display: flex;
+}
+
+.login-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-content .choose {
+  display: flex;
+  flex-direction: row;
+  /*margin-left: 211px;*/
+  /*margin-top: 199px;*/
+  margin: 199px 0px 67px 211px;
+  align-items: center;
+}
+
+.login-content .choose > div {
+  font-size: 24px;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #302E3E;
+}
+
+
+.login-content .choose span {
+  width: 2px;
+  height: 24px;
+  background: #E6E6E6;
+  margin: 0px 71px;
+}
+
+.login-content form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.login-content form > div {
+  position: relative;
+  /*border: 1px solid red;*/
+  /*border: 1px red solid;*/
+}
+
+.login-content form > .pwd-group {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+}
+
+.user-icon {
+  background: url('../../assets/img/用户名.png') no-repeat center;
+}
+
+.pwd-icon {
+  background: url('../../assets/img/密码.png') no-repeat center;
+}
+
+.login-content form input {
+  width: 300px;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  padding: 12px 12px;
+  text-indent: 46px;
+  outline: none;
+}
+
+.login-content form button {
+  width: 300px;
+  height: 42px;
+  background: linear-gradient(0deg, #E11D25 0%, #FA5B5F 100%);
+  box-shadow: 0px 3px 7px 0px rgba(225, 29, 37, 0.35);
+  border-radius: 6px;
+  outline: none;
+  border: 0px;
+  /*cursor: pointer;*/
+}
+
+.login-content form button:disabled {
+  background: #adadad;
+  box-shadow: 0px 3px 7px 0px rgba(173, 173, 173, 0.35);
+}
+
+
+.onActive {
+  color: #E11D25;
+}
+
+
+
+
+
+
