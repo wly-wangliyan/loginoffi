@@ -1,5 +1,6 @@
-import {Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
+import {LoginService} from './login.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,10 +9,12 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class NavComponent implements OnInit {
   showTopTwo = false;
+
   @ViewChild('targetDiv') targetDiv: ElementRef;
 
   constructor(private el: ElementRef, private render: Renderer2,
-              private router: Router, private route: ActivatedRoute) {
+              private router: Router, private route: ActivatedRoute,
+              private loginService: LoginService) {
   }
 
   ngOnInit() {
@@ -26,5 +29,10 @@ export class NavComponent implements OnInit {
     } else {
       this.el.nativeElement.querySelector('.nav-top').style.background = '';
     }
+  }
+
+
+  public onClickLogin(event: boolean) {
+    this.loginService.registerOrLogin = event;
   }
 }

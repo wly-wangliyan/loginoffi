@@ -5,19 +5,19 @@
     <img src="../../assets/img/logo1.png" alt="">
   </div>
   <div class="nav-menu" #navbar>
-    <nz-anchor [nzAffix]="false" [nzOffsetTop]='150' (nzClick)="test111()">
+    <nz-anchor [nzAffix]="false" [nzOffsetTop]='150'>
       <nz-link nzHref="#body" nzTitle="首页"></nz-link>
       <nz-link nzHref="#overseas" nzTitle="关于我们"></nz-link>
       <nz-link nzHref="#message" nzTitle="经典案例"></nz-link>
       <nz-link nzHref="#contact" nzTitle="联系我们"></nz-link>
     </nz-anchor>
-    <!--    <div class="login-register">-->
-    <!--      <a routerLink="/register-login">登录</a>-->
-    <!--      <span>|</span>-->
-    <!--      <a routerLink="/register-login">注册</a>-->
-    <!--    </div>-->
+        <div class="login-register">
+          <a routerLink="/register-login" (click)="onClickLogin(true)">登录</a>
+          <span>|</span>
+          <a routerLink="/register-login" (click)="onClickLogin(false)">注册</a>
+        </div>
   </div>
-  <div class="industry-information"><a routerLink="/industry-information">行业资讯</a></div>
+<!--  <div class="industry-information"><a routerLink="/industry-information">行业资讯</a></div>-->
 
 
 </div>
