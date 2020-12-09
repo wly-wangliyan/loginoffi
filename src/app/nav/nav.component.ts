@@ -1,25 +1,24 @@
-import {Component, ElementRef, EventEmitter, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {Component, DoCheck, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {LoginService} from './login.service';
+import {NavService} from './nav.service';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit, DoCheck {
   showTopTwo = false;
 
   @ViewChild('targetDiv') targetDiv: ElementRef;
 
   constructor(private el: ElementRef, private render: Renderer2,
               private router: Router, private route: ActivatedRoute,
-              private loginService: LoginService) {
+              private navService: NavService) {
   }
 
   ngOnInit() {
-    // console.log(this.el.nativeElement);
-
+    document.documentElement.scrollTop = 0;
   }
 
   ngDoCheck() {
@@ -31,8 +30,14 @@ export class NavComponent implements OnInit {
     }
   }
 
-
   public onClickLogin(event: boolean) {
-    this.loginService.registerOrLogin = event;
+    this.navService.registerOrLogin = event;
   }
+
+  // public onClickRouter(event: any) {
+  //   this.router.navigate(['/nav/home'], {relativeTo: this.route}).then(() => {
+  //     this.navService.onNavigated.emit('111');
+  //   });
+  // }
+
 }

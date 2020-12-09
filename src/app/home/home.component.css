@@ -5,6 +5,7 @@
 .banner-component img {
   width: 100%;
 }
+
 .sub-left {
   width: 52%;
   height: 100%;
@@ -15,11 +16,13 @@
   width: 48%;
   line-height: 825px;
 }
+
 .line-limit-length {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .img-part img {
   width: 100%;
   height: 554px;
@@ -65,12 +68,14 @@
   padding-top: 80px;
   background: url("../../assets/img/banner1-bg.png") no-repeat center;
 }
+
 .aboutus .title {
   background: url("../../assets/img/about-us.png") no-repeat;
   margin: 0 auto;
   width: 464px;
   height: 62px;
 }
+
 .aboutus .content {
   width: 666px;
   height: 104px;
@@ -82,17 +87,20 @@
   font-family: SourceHanSansSC-Medium;
   font-weight: 500;
 }
+
 .information {
   height: 800px;
   padding-top: 80px;
   background: url("../../assets/img/banner3-bg.png") no-repeat #f3f3f3;
 }
+
 .information .title {
   background: url("../../assets/img/case.png") no-repeat;
   margin: 0 auto;
   width: 640px;
   height: 62px;
 }
+
 .information .content {
   width: 1390px;
   margin: 0 auto;
@@ -130,6 +138,7 @@
   font-weight: 400;
   text-align: left;
 }
+
 .contact-us {
   height: 800px;
   padding-top: 80px;
@@ -225,26 +234,31 @@
   color: #fff;
   /* overflow: hidden; */
 }
+
 .pre {
   background: url("../../assets/img/上一页_disable.png") no-repeat;
   width: 28px;
   height: 54px;
 }
+
 .pre:hover {
   background: url("../../assets/img/上一页.png") no-repeat;
   width: 28px;
   height: 54px;
 }
+
 .next {
   background: url("../../assets/img/下一页_disable.png") no-repeat;
   width: 28px;
   height: 54px;
 }
+
 .next:hover {
   background: url("../../assets/img/下一页.png") no-repeat;
   width: 28px;
   height: 54px;
 }
+
 button {
   background: none;
   border: none;

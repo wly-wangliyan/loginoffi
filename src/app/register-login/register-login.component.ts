@@ -1,6 +1,5 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
-import {Subscription} from 'rxjs';
-import {LoginService} from '../nav/login.service';
+import {Component, OnInit} from '@angular/core';
+import {NavService} from '../nav/nav.service';
 
 @Component({
   selector: 'app-register-login',
@@ -14,17 +13,17 @@ export class RegisterLoginComponent implements OnInit {
   public isActive: boolean;
 
 
-  constructor(private loginService: LoginService) {
+  constructor(private navService: NavService) {
   }
 
   ngOnInit() {
-          this.isActive = this.loginService.registerOrLogin;
+    this.isActive = this.navService.registerOrLogin;
+    document.documentElement.scrollTop = 0;
   }
 
   public onClickChangeStyle(event: boolean) {
     this.isActive = event;
   }
-
 
 
 }

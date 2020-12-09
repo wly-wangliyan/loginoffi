@@ -5,20 +5,16 @@
   width: 80%;
   float: left;
 }
-
 .ant-anchor-ink {
   display: none;
 }
-
 .ant-anchor {
   display: flex;
   height: 60px;
 }
-
 .ant-anchor-link {
   height: none;
 }
-
 .ant-anchor-link {
   padding: 0;
   height: 60px;
@@ -27,7 +23,6 @@
   line-height: 60px;
   text-align: center;
 }
-
 .ant-anchor-link-title {
   color: #fff;
   font-size: 16px;
@@ -47,24 +42,20 @@
   background: url("./assets/img/selected-bg.png") no-repeat 0 45%;
   background-size: contain;
 }
-
 .ant-anchor-link-title:hover {
   color: #e11d25;
   font-size: 18px;
 }
-
 .ant-btn-primary {
   color: rgba(0, 0, 0, 0.65);
   background: #fff;
   border: none;
 }
-
 .ant-btn-primary:hover {
   color: rgba(0, 0, 0, 0.65);
   background: #fff;
   border: none;
 }
-
 .ant-modal-footer .ant-btn-primary {
   background: #1890ff;
 }

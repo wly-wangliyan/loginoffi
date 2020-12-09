@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,12 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  // constructor(private navService: NavService) {
+  //   navService.onNavigated.subscribe(name => {
+  //     this.goAnchorOverseas();
+  //   });
+  // }
+
   public array: Array<Array<Product>>;
   public contacts: Array<Contact>;
   isVisible = false;
 
-  constructor() {
-  }
+  // @ViewChild('overseas') overseasRef: ElementRef;
 
   ngOnInit() {
     this.array = [[
@@ -52,7 +58,10 @@ export class HomeComponent implements OnInit {
     this.isVisible = false;
   }
 
-
+  // 页面锚点
+  // goAnchorOverseas() {
+  //   this.overseasRef.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});
+  // }
 }
 
 export class Product {

@@ -16,14 +16,6 @@ const routes: Routes = [
   {
     path: 'nav',
     component: NavComponent,
-    // children: [{
-    //   path: 'home',
-    //   component: HomeComponent,
-    // },
-    //   {
-    //     path: 'industry-information',
-    //     component: IndustryInformationComponent,
-    //   }]
   },
   {
     path: 'login',

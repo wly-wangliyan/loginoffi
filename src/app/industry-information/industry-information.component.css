@@ -3,6 +3,56 @@
   height: 100%;
   margin: auto;
   min-width: 1440px;
+  max-width: 1920px;
+}
+
+.main-header {
+  width: 100%;
+  height: 72px;
+  background: linear-gradient(0deg, rgba(28, 28, 32, 0) 0%, #1C1C20 100%);
+  /*position: absolute;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+  position: fixed;
+  display: flex;
+}
+
+.main-header > div {
+  width: 1440px;
+  /*border: 1px solid red;*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header img {
+  cursor: pointer;
+}
+
+.main-header .login-register {
+  display: inline-block;
+  height: 72px;
+  line-height: 72px;
+  /*border: 1px solid red;*/
+  color: #fff;
+}
+
+.main-header .login-register span {
+  margin: 0 5px;
+}
+
+.main-header .login-register a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.main-header .login-register a:link {
+  color: #fff;
+}
+
+.main-header .login-register a:hover {
+  color: #e11d25;
 }
 
 .main-bg {
@@ -60,8 +110,6 @@
   font-weight: 500;
   color: #302E3E;
   z-index: 0;
-  cursor: pointer;
-
 }
 
 .content .content-info span {
@@ -75,8 +123,6 @@
 }
 
 .content .content-info .delivery-time {
-  /*margin-top: 24px;*/
-  /*width: 186px;*/
   height: 17px;
   font-size: 18px;
   font-family: Alibaba PuHuiTi;
@@ -87,23 +133,55 @@
 }
 
 .content .content-info .content-text {
-  /*width: 1180px;*/
-  /*height: 48px;*/
   font-size: 18px;
   font-family: Alibaba PuHuiTi;
   font-weight: 400;
   color: #302E3E;
-  cursor: pointer;
-  /*line-height: 48px;*/
+  height: 48px;
+  line-height: 24px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .content .content-info .line {
   width: 1200px;
   height: 1px;
   background: #C7C7C7;
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
+
+.more-button {
+  margin-top: 30px;
+  width: 99px;
+  height: 26px;
+  line-height: 20px;
+  background: url("../../assets/img/more.png") no-repeat;
+  transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms; /* Firefox 4 */
+  -webkit-transition: ease-in-out 300ms; /* Safari 和 Chrome */
+  -o-transition: ease-in-out 300ms; /* Opera */
+  /*border: 1px solid red;*/
+}
+
+.more-button:hover {
+  background: url("../../assets/img/more.png") no-repeat right;
+}
+
+.more-button a {
+  /*border: 1px solid green;*/
+  display: inline-block;
+  width: 99px;
+  height: 26px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #302E3E;
+}
 
 
 
