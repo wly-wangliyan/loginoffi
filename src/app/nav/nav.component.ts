@@ -1,6 +1,7 @@
 import {Component, DoCheck, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {NavService} from './nav.service';
+import {fromEvent, Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-nav',
@@ -9,6 +10,7 @@ import {NavService} from './nav.service';
 })
 export class NavComponent implements OnInit, DoCheck {
   showTopTwo = false;
+  public leftScroll: Subscription;
 
   @ViewChild('targetDiv') targetDiv: ElementRef;
 
@@ -19,6 +21,15 @@ export class NavComponent implements OnInit, DoCheck {
 
   ngOnInit() {
     document.documentElement.scrollTop = 0;
+
+    this.leftScroll = fromEvent(window, 'scroll').subscribe(
+        (event) => {
+          const scrollLeft = (event.target as any).documentElement.scrollLeft;
+          this.targetDiv.nativeElement.style.left = `-${scrollLeft}px`;
+        }
+    );
+
+
   }
 
   ngDoCheck() {

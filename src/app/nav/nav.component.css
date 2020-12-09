@@ -6,6 +6,15 @@
   display: flex;
   align-items: center;
   background: url('../../assets/img/header.png');
+  min-width: 1440px;
+}
+
+.nav-top > div{
+  display: flex;
+  width: 1440px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-top-two {
@@ -18,15 +27,15 @@
   background-color: #fff;
 }
 
-.nav-top .nav-logo {
-  margin-right: 30%;
-  margin-left: 10%;
-}
+/*.nav-top .nav-logo {*/
+/*  margin-right: 30%;*/
+/*  margin-left: 10%;*/
+/*}*/
 
-.nav-top-two .nav-logo {
-  margin-right: 30%;
-  margin-left: 10%;
-}
+/*.nav-top-two .nav-logo {*/
+/*  margin-right: 30%;*/
+/*  margin-left: 10%;*/
+/*}*/
 
 .nav {
   width: 90%;
@@ -38,17 +47,19 @@
 }
 
 .nav-menu {
-  width: 45%;
+  /*width: 45%;*/
   height: 60px;
   line-height: 60px;
-  float: right;
+  /*float: right;*/
+  margin-left: 320px;
 }
 
-.nav-menu .login-resgister {
-  display: inline-block;
-  float: left;
+.login-register {
+  /*display: inline-block;*/
+  /*float: left;*/
   height: 60px;
   line-height: 60px;
+  margin-left: 215px;
 }
 
 .home div {
@@ -57,7 +68,7 @@
 
 :host nz-anchor {
   height: 60px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .login-register {
@@ -88,7 +99,7 @@
 .industry-information {
   text-align: center;
   height: 60px;
-  width: 100px;
+  /*width: 100px;*/
   line-height: 60px;
   /*margin-right: 15%;*/
 }
@@ -108,6 +119,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
+  margin-left: 20px;
 
 }
 

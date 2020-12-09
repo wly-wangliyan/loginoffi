@@ -2,8 +2,8 @@
 /* You can add global styles to this file, and also import other style files */
 .ant-anchor-wrapper {
   background: transparent;
-  width: 80%;
-  float: left;
+  /*width: 80%;*/
+  /*float: left;*/
 }
 .ant-anchor-ink {
   display: none;
